@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/prism.css">
+        <link rel="stylesheet" href="../css/miEstilo.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans" rel="stylesheet">
+        <!-- &lt;  simbolos  &gt; -->
+    </head>
+    <body>
+        
+        <div id="toolbar">        
+             <a href="../index.html">&#60;- Volveral índice</a>
+             <h1>HTML Base</h1>
+             <a href="CSS.html">Ir a CSS Base -&#62;</a>
+        </div>
+      
+          <div id="contenedor">        
+        <h1>Estructura base de archivo HTML</h1>
+        
+<pre  class="line-numbers" data-line=""><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+        
+        <h1>Charset UTF-8</h1>
+        <p>Para que cualquier explorador sepa que vamos a usar el set de caracteres <b>UTF-8</b>, que contiene la Ñ, tildes y todos los caracteres de nuestro idioma.</p>
+        <pre  class="line-numbers" data-line="4"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+        <h1>Título a mostrar en la pestaña del explorador</h1>        
+        <pre  class="line-numbers" data-line="5"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Mi título en pestaña :D&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+        <!-- EJEMPLO -->
+        <h1>Títulos de distinto nivel en el Body</h1>        
+        <p>Recordá que podes ponerlos en el orden que quieras y la cantidad que quieras de cada uno.</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line="8-13"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Mi título en pestaña :D&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Titulo de primer nivel!&lt;/h1&gt;
+        &lt;h2&gt;Titulo de segundo nivel!&lt;/h2&gt;
+        &lt;h3&gt;Titulo de tercer nivel!&lt;/h3&gt;
+        &lt;h4&gt;Titulo de cuarto nivel!&lt;/h4&gt;
+        &lt;h5&gt;Titulo de quinto nivel!&lt;/h5&gt;
+        &lt;h6&gt;Titulo de sexto nivel!&lt;/h6&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1>Titulo de primer nivel</h1>
+            <h2>Titulo de segundo nivel!</h2>
+            <h3>Titulo de tercer nivel!</h3>
+            <h4>Titulo de cuarto nivel!</h4>
+            <h5>Titulo de quinto nivel!</h5>
+            <h6>Titulo de sexto nivel!</h6>
+        </div>            
+        </div>
+        
+        <!-- EJEMPLO -->
+        <h1>Párrafos en el Body</h1>        
+        <p>Recordá que podes ponerlos donde quieras y la cantidad que quieras</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line="5-7,10-12"><code class="language-markup">...
+...
+    &lt;body&gt;
+        &lt;h2&gt;Abajo hay un párrafo&lt;/h2&gt;
+        &lt;p&gt;Este es un párrafo conteniendo mucho texto :D :D :D :D :D
+        :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D 
+        :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D&lt;/p&gt;
+        
+        &lt;h2&gt;Abajo hay otro párrafo&lt;/h2&gt;
+        &lt;p&gt;Este es un párrafo conteniendo otro texto (: (: (: (: (: 
+        (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (:  
+        (: (: (: (: (: (: (: &lt;/p&gt;        
+    &lt;/body&gt;
+...
+...</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            
+            <h2>Abajo hay un párrafo</h2>
+            <p>Este es un párrafo conteniendo mucho texto :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D</p>
+            <h2>Abajo hay otro párrafo</h2>
+            <p>Este es un párrafo conteniendo otro texto (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: </p>
+        </div>            
+        </div>
+        
+        <!-- EJEMPLO -->
+        <h1>Imágenes</h1>        
+        <p>Dentro del atributo "src" va el link a la foto. Si la foto la tenemos en el mismo lugar que el archivo HTML, entonces ponemos solo el nombre del archivo.</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">&lt;img src="imagen.png"&gt;        </code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <img src="../img/imagen.png">
+            
+        </div>            
+        </div>
+        
+        <!-- EJEMPLO -->
+        <h1>Línk a otra página</h1>        
+        <p>El link tiene 2 componentes:</p>
+        <ol>
+            <li>Enlace a donde nos lleva el link al clickearlo. (href)</li>
+            <li>Texto que se ve en el link</li>
+        </ol>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">&lt;a href="https://www.google.com"&gt; Hacer click para ir al Buscador &lt;/a&gt;    </code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <a href="https://www.google.com"> Hacer click para ir al Buscador </a>
+            
+        </div>            
+        </div>
+        
+        
+        <!-- EJEMPLO -->
+        <h1>Lista Sin orden</h1>        
+        <p></p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">&lt;ul&gt;
+    &lt;li&gt;Papa&lt;/li&gt;
+    &lt;li&gt;Aceite&lt;/li&gt;
+    &lt;li&gt;Sal&lt;/li&gt;
+    &lt;li&gt;Queso cheddar (baba)&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            
+            <ul>
+                <li>Papa</li>
+                <li>Aceite</li>
+                <li>Sal</li>
+                <li>Queso cheddar (baba)</li>
+            </ul>
+        </div>            
+        </div>
+        
+        
+        <!-- EJEMPLO -->
+        <h1>Lista Con orden</h1>        
+        <p>Noten que solo se agregan números, pero no se realiza ningún tipo de cambio de orden de los ítems</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line="1,6"><code class="language-markup">&lt;ol&gt;
+    &lt;li&gt;Papa&lt;/li&gt;
+    &lt;li&gt;Aceite&lt;/li&gt;
+    &lt;li&gt;Sal&lt;/li&gt;
+    &lt;li&gt;Queso cheddar (baba)&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            
+            <ol>
+                <li>Papa</li>
+                <li>Aceite</li>
+                <li>Sal</li>
+                <li>Queso cheddar (baba)</li>
+            </ol>
+        </div>            
+        </div>
+        
+        
+        <!-- EJEMPLO -->
+        <h1>Ejemplo completo</h1>        
+        <p></p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+        <span class="tituloEjemplo">Código</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Mi título en pestaña :D&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Titulo de primer nivel!&lt;/h1&gt;
+        &lt;h2&gt;Titulo de segundo nivel!&lt;/h2&gt;
+        &lt;h3&gt;Titulo de tercer nivel!&lt;/h3&gt;
+        &lt;h4&gt;Titulo de cuarto nivel!&lt;/h4&gt;
+        &lt;h5&gt;Titulo de quinto nivel!&lt;/h5&gt;
+        &lt;h6&gt;Titulo de sexto nivel!&lt;/h6&gt;
+        
+        &lt;p&gt;Este es un párrafo conteniendo mucho texto :D :D :D :D :D
+        :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D 
+        :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D&lt;/p&gt;
+        
+        &lt;p&gt;Este es un párrafo conteniendo otro texto (: (: (: (: (: 
+        (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (:  
+        (: (: (: (: (: (: (: &lt;/p&gt;        
+        
+        &lt;img src="imagen.png"&gt;
+        
+        &lt;a href="https://www.google.com"&gt; Hacer click para ir al Buscador &lt;/a&gt; 
+        
+        &lt;ul&gt;
+            &lt;li&gt;Papa&lt;/li&gt;
+            &lt;li&gt;Aceite&lt;/li&gt;
+            &lt;li&gt;Sal&lt;/li&gt;
+            &lt;li&gt;Queso cheddar (baba)&lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;ol&gt;
+            &lt;li&gt;Papa&lt;/li&gt;
+            &lt;li&gt;Aceite&lt;/li&gt;
+            &lt;li&gt;Sal&lt;/li&gt;
+            &lt;li&gt;Queso cheddar (baba)&lt;/li&gt;
+        &lt;/ol&gt;
+        
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1>Titulo de primer nivel</h1>
+            <h2>Titulo de segundo nivel!</h2>
+            <h3>Titulo de tercer nivel!</h3>
+            <h4>Titulo de cuarto nivel!</h4>
+            <h5>Titulo de quinto nivel!</h5>
+            <h6>Titulo de sexto nivel!</h6>            
+            <p>Este es un párrafo conteniendo mucho texto :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D :D</p>            
+            <p>Este es un párrafo conteniendo otro texto (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: (: </p>
+            <img src="../img/imagen.png">
+            <a href="https://www.google.com"> Hacer click para ir al Buscador </a>
+             <ul>
+                <li>Papa</li>
+                <li>Aceite</li>
+                <li>Sal</li>
+                <li>Queso cheddar (baba)</li>
+            </ul>
+            <ol>
+                <li>Papa</li>
+                <li>Aceite</li>
+                <li>Sal</li>
+                <li>Queso cheddar (baba)</li>
+            </ol>
+        </div>            
+        </div>
+        </div>
+        
+        
+        <script src="../js/prism.js"></script>
+
+    </body>
+</html>

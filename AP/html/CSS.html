@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/prism.css">
+        <link rel="stylesheet" href="../css/miEstilo.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans" rel="stylesheet">
+        <!-- &lt;  simbolos  &gt; -->
+    </head>
+    <body>
+        
+          
+        <div id="toolbar">        
+             <a href="../index.html">&#60;- Volveral índice</a>
+             <h1>CSS Base</h1>
+             <a href="CSS.html" style="visibility:hidden;">Ir a CSS Base -&#62;</a>
+        </div>
+      
+          <div id="contenedor">   
+                        
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Crear un archivo CSS</h1>        
+        <p class="desc">Para agregar código CSS a nuestra página, lo primero es crear un archivo con cualquier nombre y extensión "css".</p>
+        <p class="desc">Por ejemplo <i>MiEstilo.css</i></p>
+                
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Configurar el archivo HTML para que use al archivo CSS</h1>        
+        <p class="desc">Luego de tener creado el archivo CSS, le tenemos que "avisar" al HTML para que lo tome. Lo hacemos dentro del <b>HEAD</b>.</p>
+        <p class="desc">La linea 6 hace esa configuración, y es siempre igual, salvo por el nombre del archivo en el atributo <b>href</b>, que va a depender de que nombre le pongas al archivo CSS.</p>
+        <div class="ejemplo clearfix">
+        <div>
+        <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line="6"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Mi título en pestaña :D&lt;/title&gt;
+        &lt;link rel="stylesheet" href="MiEstilo.css"&gt;
+    &lt;/head&gt;
+...
+...</code></pre>
+        </div>
+        
+        </div>
+        <div class="pagebreak"> </div>
+        
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Color</h1>        
+        <p class="desc">Para ponerle color a cualquier texto, se usa la propiedad "color".</p>
+        <p class="desc">En el ejemplo de abajo le ponemos color rojo a <b>todos</b> los elementos del tipo <b>h1</b>.</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;h1&gt; Titulo primero &lt;/h1&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">h1 {
+  color: red;
+}</code></pre>
+
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1 style="color: red;"> Titulo primero </h1>
+            
+        </div>            
+        </div>
+        
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Color de fondo</h1>        
+        <p class="desc">Ahora le agregamos color de fondo negro al <b>h1</b></p>        
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;h1&gt; Titulo primero &lt;/h1&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">h1 {
+  color: red;
+  background-color: black;
+}</code></pre>
+
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1 style="color: red; background-color: black;"> Titulo primero </h1>
+            
+        </div>            
+        </div>
+        <div class="pagebreak"> </div>
+                
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Tamaño de letra</h1>        
+        <p class="desc"></p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;h1&gt; Titulo primero &lt;/h1&gt;
+    
+    &lt;h2&gt; Titulo secundario &lt;/h2&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">h1 {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 60px;
+}
+</code></pre>
+
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1 style="font-size: 15px;"> Titulo primero </h1>
+            <h2 style="font-size: 60px;"> Titulo secundario </h2>
+            
+        </div>            
+        </div>
+        
+        <div class="pagebreak"> </div>
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Sombra de texto</h1>        
+        <p class="desc">Esta propiedad tiene 4 valores:</p>        
+        <ul>
+            <li>El primer valor indica cuanto se desplaza la sombra con respecto al texto original para los costados.</li>
+            <li>El segundo valor indica cuanto se desplaza la sombra con respecto al texto original para arriba o para abajo.</li>
+            <li>El tercer valor indica que tan difusa es la sombra.</li>
+            <li>El cuarto valor indica el color de la sombra.</li>
+        </ul>
+        <p class="desc">En el ejemplo le aplicamos distintas sombras a dos títulos.</p>   
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;h1&gt; Titulo primero &lt;/h1&gt;
+    &lt;h3&gt; Otro título &lt;/h3&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">h1 {
+  text-shadow: 2px 5px 4px red;
+}
+
+h3 {
+  text-shadow: 0px -7px 9px green;
+}
+</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <h1 style="text-shadow: 2px 5px 4px red;"> Titulo primero </h1>
+            <h3 style="text-shadow: 0px -7px 9px green;"> Otro título </h3>
+            
+        </div>            
+        </div>
+
+                
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Rotar</h1>                
+        <p class="desc">En el ejemplo le aplicamos rotación de 45 grados a la imágen.</p>   
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;img src="imagen.png"&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">img {
+  transform: rotate(45deg);
+}
+</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <img src="../img/imagen.png"     style="transform: rotate(45deg);">
+            
+        </div>            
+        </div>
+        
+                        
+        <!-- EJEMPLO -->
+        <h1 class="titulo">Animación</h1>                
+        <p class="desc">Las propiedades:</p>   
+        <ul>
+            <li>animation-name: le dice al elemento como se llama la animación que tiene que usar. Nosotros elegimos los nombres de las animaciones.</li>
+            <li>animation-duration: le dice al elemento cuantos segundos tiene que durar la animación.</li>
+            <li>animation-iteration-count: le dice al elemento cuantas veces tiene que hacer la animación antes de que se detenga. Si le ponemos "infinite" lo hará para siempre!</li>
+            <li>animation-direction: le dice al elemento que cuando termine la animación, en vez de volverla a empezar de cero, bruzcamente, genere la animación contraria para volver al estado inicial.</li>
+        </ul>
+        <p class="desc">Para crear una animación (para poder asignarla a un elemento mediante animation-name) tenemos que usar la parte del código que dice "@keyframes" siguiendo con el nombre que le queramos poner a la animación.</p>
+        <p class="desc">Dentro de las llaves de "from" ponemos como queremos que arranque la animación, y dentro de "to" ponemos como queremos que termine.</p>
+        <p class="desc">"from" significa "desde" en castellano.</p>
+        <p class="desc">"to" significa "hasta" en castellano.</p>
+        <p class="desc">Podemos poner la cantidad de propiedades de CSS que queramos dentro de "from" y de "to".</p>
+        <div class="ejemplo clearfix">
+        <div class="codigo">
+            <span class="tituloEjemplo">Código HTML:</span>
+        <pre  class="line-numbers" data-line=""><code class="language-markup">...
+...
+&lt;body&gt;
+    &lt;p&gt; Soy un párrafo que cambia de color :D &lt;/p&gt;
+&lt;/body&gt;
+...
+...</code></pre>
+        <span class="tituloEjemplo">Código CSS</span>
+            <pre class="line-numbers"><code class="language-css">p {
+    animation-name: miAnimacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes miAnimacion {
+    from {
+        color: red;
+    }
+    to {
+        color: yellow;
+    }
+}
+</code></pre>
+        </div>
+        <div class="resultado">
+            <span class="tituloEjemplo">Resultado</span>
+            <p id="parrafoAnimacion"> Soy un párrafo que cambia de color :D</p>
+            
+        </div>            
+        </div>
+        </div>
+
+        <script src="../js/prism.js"></script>
+
+    </body>
+</html>
